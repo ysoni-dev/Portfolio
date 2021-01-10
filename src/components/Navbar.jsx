@@ -97,7 +97,7 @@ const menuItem = [
     {
         listIcons: <Home/>,
         listText: 'Home',
-        listPath : '/'
+        listPath : '/Portfolio'
     },
     {
         listIcons: <AssignmentInd/>,

@@ -1,5 +1,5 @@
 import React from 'react';
-import {Route} from 'react-router-dom'
+import {Route, Switch} from 'react-router-dom'
 import Home from './components/Home'
 import Resume from './components/Resume'
 import Projects from './components/Projects'
@@ -15,11 +15,12 @@ function App() {
     <CssBaseline/>
     {/* <Home/> */}
     {/* <Resume/> */}
-    <Route exact path="/" component={Home} />
+    <Switch>
+    <Route exact path="/Portfolio" component={Home} />
     <Route path="/resume" component={Resume} />
     <Route path="/project" component={Tryy} />
     <Route path="/contact" component={Contact} />
-    
+    </Switch>
     </>
   );
 }
