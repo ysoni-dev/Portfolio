@@ -1,0 +1,8 @@
+body{
+    background: url('bg2.jpg') no-repeat center center fixed;
+   -webkit-background: cover;
+   background-size: cover;
+   -moz-background: cover;
+   -o-background: cover;
+   -webkit-background: cover;
+  }
