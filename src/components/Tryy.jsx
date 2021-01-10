@@ -50,7 +50,7 @@ var items = [
   const theme = useTheme();
         return (
             items = items.map(function(item) {
-                return <div key={item.id} style={{color:'red', height:'200px'}}>{item.name}</div>
+                return <div key={item.id} style={{color:'red',}}>{item.name}</div>
               }),
 
               <>
@@ -59,9 +59,9 @@ var items = [
         </Helmet>
               <Navbar/>
                   <Typography className={classes.uppertext} variant="h3" component="h3">
-                    My Project Work
+                Project Work
                 </Typography>
-                <Typography className={classes.lowertext} variant="h3" component="h3">
+                <Typography className={classes.lowertext} variant="h3" component="h3" gutterBottom>
                 My Portfolio
                 </Typography>
 

@@ -182,7 +182,8 @@ const Resume = () => {
     icon={<StopSharpIcon />}
   />
 </VerticalTimeline>
-           
+<br></br>
+           <Divider/>
         </>
     )
 }
