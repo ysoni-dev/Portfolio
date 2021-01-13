@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import Navbar from './Navbar'
 import Helmet from 'react-helmet'
 import Container from '@material-ui/core/Container'
@@ -11,14 +12,18 @@ import Card from '@material-ui/core/Card'
 import CardContent from '@material-ui/core/CardContent';
 import CloudUploadIcon  from '@material-ui/icons/CloudUpload'
 import { Typography } from '@material-ui/core';
-import divider from './Images/divider.png'
+import divider from './Images/divider.png';
+import mycv from './resume/resume.txt'
 
 
 
-const Contact = () => {
+class Contact extends React.Component {
+
+  
+    render(){
     return (
         <>
-        <Helmet>
+        <Helmet>  
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet"></link>
         </Helmet>
           <Navbar/>  
@@ -38,18 +43,18 @@ const Contact = () => {
             <img src={divider} height="100px"></img>
             </div>
 
-            <Button variant="outlined" color="secondary" endIcon={<CloudUploadIcon/>} style={{borderBlockColor:'tan', color:'tan',float:'right'}}>
+            
+
+           <Link to={mycv} target='_blank' download="My resume"><Button variant="outlined" color="secondary" endIcon={<CloudUploadIcon/>} style={{borderBlockColor:'tan', color:'tan',float:'right'}}>
               Download CV
-            </Button>
-            {/* <img src={divider} height="100px" style={{display: 'block',
-  marginLeft: 'auto',
-  marginRight: 'auto',
-  width: 'auto',}}></img> */}
+            </Button></Link>
+            
            </CardContent>
             </Card>
            
         </>
     )
+  }
 }
 
 export default Contact
