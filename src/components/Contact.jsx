@@ -13,7 +13,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CloudUploadIcon  from '@material-ui/icons/CloudUpload'
 import { Typography } from '@material-ui/core';
 import divider from './Images/divider.png';
-import mycv from './resume/resume.txt'
+import mycv from './resume/resume.docx'
 
 
 
